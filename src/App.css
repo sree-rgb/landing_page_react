@@ -31,6 +31,7 @@ h1{
 .brand-title{
   font-size: 1.5rem;
   margin: .5rem;
+  padding-left: .7rem
 }
 .navbar-links ul{
   margin:0;
@@ -65,7 +66,32 @@ h1{
   background-color: white;
   border-radius: 10px;
 }
+
+footer {
+
+  height:5px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  left:0;
+  position:absolute;
+  padding-top: 20px;
+  padding-bottom: 2rem;
+}
+
 @media(max-width: 600px){
+  .row{
+    display:block;
+  }
+  .col {
+    display:block;
+  }
+  .images{
+    width:8rem;
+  } 
+  footer{
+    position:relative;
+  }
   .toggle-button{
     display:flex;
   }
@@ -93,15 +119,4 @@ h1{
 }
 .navbar-links.active {
   display: flex;
-}
-
-footer {
-
-  height:5px;
-  text-align: center;
-  width: 100%;
-  bottom: 0px;
-  left:0px;
-  position:absolute;
-  padding-top: 20px;
 }
